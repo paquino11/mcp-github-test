@@ -17,11 +17,12 @@
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
-        .content {
+        .content, .features, .team, .contact, .projects {
             background-color: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         h2 {
             color: #666;
@@ -29,14 +30,86 @@
         p {
             line-height: 1.6;
         }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .team-member {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to MCP GitHub Test</h1>
     <p>This is a simple test page for our GitHub repository.</p>
+    
     <div class="content">
         <h2>About</h2>
-        <p>This page demonstrates basic HTML structure and will be styled with CSS later.</p>
+        <p>This page demonstrates basic HTML structure with enhanced content sections and styling.</p>
+    </div>
+
+    <div class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div>
+                <h3>Responsive Design</h3>
+                <p>Our pages adapt beautifully to any screen size.</p>
+            </div>
+            <div>
+                <h3>Modern Styling</h3>
+                <p>Clean and contemporary CSS styling approach.</p>
+            </div>
+            <div>
+                <h3>Optimized Performance</h3>
+                <p>Fast loading and smooth user experience.</p>
+            </div>
+            <div>
+                <h3>Best Practices</h3>
+                <p>Following latest web development standards.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="team">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <h3>John Doe</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>Jane Smith</h3>
+                <p>Designer</p>
+            </div>
+            <div class="team-member">
+                <h3>Mike Johnson</h3>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <h2>Sample Projects</h2>
+        <p>Here are some of our recent projects:</p>
+        <ul>
+            <li>E-commerce Platform Redesign</li>
+            <li>Corporate Website Development</li>
+            <li>Mobile App Interface Design</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us:</p>
+        <p>Email: contact@example.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Address: 123 Web Dev Street, Coding City, 12345</p>
     </div>
 </body>
 </html>
